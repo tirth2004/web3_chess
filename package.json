@@ -9,13 +9,22 @@
     "type": "git",
     "url": "git://github.com/oakmac/chessboardjs.git"
   },
-  "files": ["dist/"],
+  "files": [
+    "dist/"
+  ],
   "dependencies": {
-    "jquery": ">=3.4.1"
+    "@openzeppelin/contracts": "^4.9.3",
+    "alchemy-sdk": "^2.10.1",
+    "chess.js": "^1.0.0-beta.6",
+    "ethers": "^6.7.1",
+    "jquery": ">=3.4.1",
+    "web3": "^4.1.2"
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "csso": "3.5.1",
     "fs-plus": "3.1.1",
+    "hardhat": "^2.17.3",
     "kidif": "1.1.0",
     "mustache": "2.3.0",
     "standard": "10.0.2",
@@ -25,5 +34,12 @@
     "build": "standard lib/chessboard.js && node scripts/build.js",
     "standard": "standard --fix lib/*.js website/js/*.js",
     "website": "node scripts/website.js"
+  },
+  "bugs": {
+    "url": "https://github.com/oakmac/chessboardjs/issues"
+  },
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
   }
 }

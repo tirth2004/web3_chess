@@ -1,0 +1,78 @@
+Arguments: 
+  /opt/homebrew/Cellar/node/20.7.0/bin/node /opt/homebrew/Cellar/yarn/1.22.19/libexec/bin/yarn.js add v1.22.19
+
+PATH: 
+  /Users/tirthbhayani/bin:/Library/Frameworks/Python.framework/Versions/3.11/bin:/Users/tirthbhayani/anaconda3/bin:/Users/tirthbhayani/anaconda3/condabin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/tirthbhayani/.cache/zsh4humans/v5/fzf/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.7.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/v1.22.19: Not found
+      at params.callback [as _callback] (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:66145:18)
+      at self.callback (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:140890:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141862:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (/opt/homebrew/Cellar/yarn/1.22.19/libexec/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1376:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "author": "Chris Oakman <chris@oakmac.com> (http://chrisoakman.com/)",
+    "name": "@chrisoakman/chessboardjs",
+    "description": "JavaScript chessboard widget",
+    "homepage": "https://chessboardjs.com",
+    "license": "MIT",
+    "version": "1.0.0",
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/oakmac/chessboardjs.git"
+    },
+    "files": [
+      "dist/"
+    ],
+    "dependencies": {
+      "@openzeppelin/contracts": "^4.9.3",
+      "alchemy-sdk": "^2.10.1",
+      "jquery": ">=3.4.1",
+      "web3": "^4.1.2"
+    },
+    "devDependencies": {
+      "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+      "csso": "3.5.1",
+      "fs-plus": "3.1.1",
+      "hardhat": "^2.17.3",
+      "kidif": "1.1.0",
+      "mustache": "2.3.0",
+      "standard": "10.0.2",
+      "uglify-js": "3.6.0"
+    },
+    "scripts": {
+      "build": "standard lib/chessboard.js && node scripts/build.js",
+      "standard": "standard --fix lib/*.js website/js/*.js",
+      "website": "node scripts/website.js"
+    },
+    "bugs": {
+      "url": "https://github.com/oakmac/chessboardjs/issues"
+    },
+    "main": "hardhat.config.js",
+    "directories": {
+      "test": "test"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
